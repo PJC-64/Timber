@@ -1,0 +1,14 @@
+{
+  "name": "outside-cli",
+  "version": "1.0.0",
+  "license": "MIT",
+  "bin": {
+    "outside": "bin/outside"
+  },
+  "scripts": {},
+  "dependencies": {
+    "axios": "^1.2.4",
+    "commonjs-ora": "^1.0.2",
+    "minimist": "^1.2.7"
+  }
+}
