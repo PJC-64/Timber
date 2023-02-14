@@ -1,15 +1,8 @@
-const axios = require('axios')
+const fetch = require('node-fetch')
 
-module.exports = async (location) => {
-    const results = await axios ({
-        method: 'get',
-        url: 'https://weather-ydn-yql.media.yahoo.com/forecastrss',
-        params: {
-            format: 'json',
-            q: `select item from weather.forecast where woeid in (select woeid from geo.places(1) where text = "${location}")`,
-        },
-    })
-
-    return results.data.query.results.channel.item
-
+module.exports = async (location = "Gateshead") => {
+    const res1 = await fetch("https://wttr.in/" + location + "?format=4");
+    const res2 = await res1.text()
+    console.log(res2)
+    return res2
 }

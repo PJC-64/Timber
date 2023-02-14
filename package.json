@@ -9,6 +9,7 @@
   "dependencies": {
     "axios": "^1.2.4",
     "commonjs-ora": "^1.0.2",
-    "minimist": "^1.2.7"
+    "minimist": "^1.2.7",
+    "node-fetch": "^2.6.9"
   }
 }
